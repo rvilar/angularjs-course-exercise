@@ -1,0 +1,7 @@
+<div *ngIf="lineItem">
+  <h2>Id: {{lineItem.id}} - name: {{lineItem.name}}</h2>
+  <label>
+    Product name:
+    <input type="text" [(ngModel)]="lineItem.name">
+  </label>
+</div>
