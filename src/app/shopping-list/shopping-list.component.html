@@ -1,0 +1,7 @@
+<h1>Shopping list</h1>
+<ul>
+  <li *ngFor="let item of shoppingList" routerLink="/list-detail/{{item.id}}">
+    {{item.id}} - {{item.name}}
+  </li>
+</ul>
+<button (click)="deleteList()" [disabled]="isEmpty">Clear all</button>

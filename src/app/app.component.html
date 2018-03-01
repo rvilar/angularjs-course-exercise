@@ -1,9 +1,1 @@
-<h1>Shopping list</h1>
-<ul>
-  <li *ngFor="let item of shoppingList" (click)="selectCurrent(item)">
-    {{item.id}} - {{item.name}}
-  </li>
-</ul>
-<button (click)="deleteList()" [disabled]="isEmpty">Clear all</button>
-
-<app-list-item-detail [product]="selectedLineItem"></app-list-item-detail>
+<router-outlet></router-outlet>
