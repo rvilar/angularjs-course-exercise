@@ -1,7 +1,8 @@
 <h1>Shopping list</h1>
+<app-edit-form (onAddProduct)="listAddItem($event)"></app-edit-form>
 <ul>
   <li *ngFor="let item of shoppingList" routerLink="/list-detail/{{item.id}}">
-    {{item.id}} - {{item.name}}
+    {{ item.id }} - {{ item.name }} ({{ item.quantity }})
   </li>
 </ul>
 <button (click)="deleteList()" [disabled]="isEmpty">Clear all</button>

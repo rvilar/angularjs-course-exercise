@@ -29,4 +29,8 @@ export class ShoppingListComponent implements OnInit {
     this.selectedLineItem = item;
   }
 
+  listAddItem(item: LineItem) {
+    this.shoppingList.push(item);
+  }
+
 }
