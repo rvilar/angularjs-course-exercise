@@ -5,7 +5,7 @@ import { ListItemDetailComponent } from './list-item-detail/list-item-detail.com
 
 const routes: Routes = [
   { path: 'shopping-list', component: ShoppingListComponent },
-  { path: 'list-detail/:id', component: ListItemDetailComponent}
+  { path: 'list-detail/:id', component: ListItemDetailComponent},
   { path: '', redirectTo: 'shopping-list', pathMatch: 'full' }
 ];
 
